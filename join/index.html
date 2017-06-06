@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Film Club - Join</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="logo">
+        <img src="../images/filmclub.png" alt="">
+      </div>
+      <nav>
+        <a id="home" href="../index.html">Home</a>
+        <a id="calendar" href="../calendar/index.html">Calendar</a>
+        <a id="join" href="#">Join</a>
+      </nav>
+    </header>
+    <div class="heading">
+      <h2>Join Film Club</h2>
+    </div>
+    <div class="content-body">
+      <div class="profile-section">
+        <div class="file-upload">
+          <label for="fileUpload">profile picture</label><br>
+          <input type="file" id="fileUpload">
+        </div>
+        <div id="profile-pic">
+          <img class="profile-pic" src="../images/profile-placeholder.png">
+        </div>
+
+      </div>
+        <form class="form-info" action="index.html" method="POST">
+          <div class="text-fields">
+            <div class="contact-info">
+              <label class="info name">name</label>
+              <input type="text" name="info name" value="">
+              <label class="info name">email address</label>
+              <input type="text" name="info email" value="">
+            </div>
+            <div class="pwd">
+              <label>password</label>
+              <input type="pwd" name="password" value="">
+              <label>confirm password</label>
+              <input type="pwd" name="password" value="">
+            </div>
+          </div>
+          <div class="interested-genres">
+            <label class="genres">Which genres are you interested in?</label>
+              <div class="bullet-circles">
+                <input type="checkbox" name="action" value=""><label>action</label>
+                <input type="checkbox" name="adventure" value=""><label>adventure</label>
+                <input type="checkbox" name="comedy" value=""><label>comedy</label>
+                <input type="checkbox" name="drama" value=""><label>drama</label>
+                <input type="checkbox" name="fantasy" value<label>fantasy</label>
+                <input type="checkbox" name="historical" value=""> <label>historical</label>
+                <input type="checkbox" name="horror" value=""><label>horror</label>
+                <input type="checkbox" name="mystery" value=""><label>mystery</label>
+                <input type="checkbox" name="romance" value=""><label>romance</label>
+                <input type="checkbox" name="science" value=""><label>science fiction</label>
+                <input type="checkbox" name="western" value=""><label>western</label>
+
+                </div>
+              </div>
+              <label>Additional input</label>
+              <textarea class="additional-input" name="textarea" rows="3" cols="50"></textarea>
+
+              <div class="join-btn">
+                <button type="button" name="button">Join Film Club</button>
+              </div>
+          </div>
+        </form>
+
+    </div>
+    <footer>
+      <bottom-nav class="foot-nav">
+        <a id="home" href="index.html">Home</a>
+        <a id="calendar" href="./calendar/index.html">Calendar</a>
+        <a id="join" href="./join/index.html">Join</a>
+      </bottom-nav>
+        <div class="copyright">
+          <p>© 2017, Film Club</p>
+        </div>
+    </footer>
+  </body>
+</html>
