@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header class="header-wrapper">
+    <div class="nav-wrapper">
       <div class="logo">
         <img src="./images/filmclub.png" alt="">
       </div>
-      <nav>
-        <a id="home" href="index.html">Home</a>
-        <a id="calendar" href="./calendar/index.html">Calendar</a>
-        <a id="join" href="./join/index.html">Join</a>
-      </nav>
-    </header>
+      <div class="nav-bar">
+        <a id="home" class="home" href="index.html">Home</a>
+        <a id="calendar" class="calendar" href="./calendar/index.html">Calendar</a>
+        <a id="join" class="join" href="./join/index.html">Join</a>
+      </div>
+    </div>
     <div class="heading">
       <h2>Get Involved</h2>
     </div>
-    <div class="content-body">
+    <div class="content-body content-body-flex">
       <div class="article">
         <h2 class="subheading">Watch</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -34,102 +34,60 @@
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-    <main class="main-content">
-      <h1 class="main-content-header">Up Next</h1>
-      <aside class="aside">
-        <div class="column-container">
-          <div class="aside-item">
-            <img src="./images/rashomon-poster.jpg" alt="rashomon poster">
-          </div>
-          <div class="aside-item">
-            <a href="https://www.youtube.com/watch?v=7QTrx3YNz7A&t=8s"><h4>Rashomon</h4></a>
-            <p>Film Club: <strong>6/13</strong></p>
-            <hr>
-            <h4>Discussion Points</h4>
-            <div class="grid-item">
-              <ul>
-                <li>perspective</li>
-                <li>balance</li>
-                <li>movement</li>
-                <li>emphasis</li>
-                <li>space</li>
-              </ul>
-            </div>
+    <div class="films-wrapper">
+        <div class="featured-film">
+            <h1 class="main-header">Up Next</h1>
+            <div class="up-next-feature-film">
+              <img src="./images/rashomon-poster.jpg" alt="rashomon poster" class="larger-poster">
+                <div>
+                <a href="https://www.youtube.com/watch?v=7QTrx3YNz7A&t=8s" class="film-title">Rashomon</a>
+                <span>Film Club:<strong> 6/13</strong></span>
+                <hr>
+                <h4>Discussion Points</h4>
+                <ul class="next-feature-film-list">
+                  <li>perspective</li>
+                  <li>balance</li>
+                  <li>movement</li>
+                  <li>emphasis</li>
+                  <li>space</li>
+                </ul>
+                </div>
+              </div>
         </div>
-        </div>
-      </aside>
-      <div class="films-container">
-        <div class="column-container">
-
-
-        <div class="film-grid-item">
-              <div id="edison">
-                <div class="img-container">
-                  <img src="./images/great-train-poster.jpg" alt="">
+        <div class="film-grid-container">
+          <div class="film-grid-container-block">
+              <div class="grid-item">
+                  <img id="edison" src="./images/great-train-poster.jpg" alt="the great train robbery" class="poster">
+                  <a href="https://www.youtube.com/watch?v=zuto7qWrplc" class="movie-link">The Great Train Robbery</a>
+                  <span>Film Club:<strong>6/27</strong></span>
                 </div>
-                <a href="https://www.youtube.com/watch?v=zuto7qWrplc">The Great Train Robbery</a>
-                <p>Film Club: <strong>6/27</strong></p>
-              </div>
-            </div>
-        <div class="film-grid-item">
-              <div id="bike-thief">
-                <div class="img-container">
-                <img src="./images/bicycle-thief-poster.jpg" alt="">
-              </div>
-                <a href="https://www.youtube.com/watch?v=H3jnzXX9mXs">The Bicycle Thief</a>
-                <p>Film Club: <strong>7/11</strong></p>
-              </div>
-            </div>
-        <div class="film-grid-item">
-              <div id="nosferatu">
-                <div class="img-container">
-                  <img src="./images/nosferatu-poster.jpg" alt="">
+              <div class="grid-item">
+                  <img id="bike-thief" src="./images/bicycle-thief-poster.jpg" alt="the bicycle thief" class="poster">
+                  <a href="https://www.youtube.com/watch?v=H3jnzXX9mXs" class="movie-link">The Bicycle Thief</a>
+                  <span>Film Club:<strong>7/11</strong></span>
                 </div>
-                <a href="https://www.youtube.com/watch?v=FC6jFoYm3xs">Nosferatu</a>
-                <p>Film Club: <strong>7/25</strong></p>
-              </div>
-            </div>
-        <div class="film-grid-item">
-              <div id="metropolis">
-                <div class="img-container">
-                  <img src="./images/metropolis-poster.jpg" alt="">
+              <div class="grid-item">
+                  <img id="nosferatu" src="./images/nosferatu-poster.jpg" alt="nosferatu" class="poster">
+                  <a href="https://www.youtube.com/watch?v=FC6jFoYm3xs" class="movie-link">Nosferatu</a>
+                  <span>Film Club:<strong>7/25</strong></span>
                 </div>
-                <a href="https://www.youtube.com/watch?v=Q0NzALRJifI">Metropolis</a>
-                <p>Film Club: <strong>8/08</strong></p>
-              </div>
-            </div>
+              <div class="grid-item">
+            <img id="metropolis" src="./images/metropolis-poster.jpg" alt="metropolis" class="poster">
+            <a href="https://www.youtube.com/watch?v=Q0NzALRJifI" class="movie-link">Metropolis</a>
+            <span>Film Club:<strong>8/08</strong></span>
           </div>
+          </div>
+        </div>
       </div>
-    </main>
-
-
     <footer>
-      <bottom-nav class="foot-nav">
-        <a id="home" href="index.html">Home</a>
-        <a id="calendar" href="./calendar/index.html">Calendar</a>
-        <a id="join" href="./join/index.html">Join</a>
-      </bottom-nav>
+      <div class="nav-bar">
+        <a class="footer-nav home" id="home" href="index.html">Home</a>
+        <a class="footer-nav calendar" id="calendar" href="./calendar/index.html">Calendar</a>
+        <a class="footer-nav join" id="join" href="./join/index.html">Join</a>
+     </div>
         <div class="copyright">
           <p>© 2017, Film Club</p>
         </div>
     </footer>
   </body>
 </html>
-
-<!--
-Text #0B1942
-inline link: #00B7D3
-h2 background: #0B1942
-h2 color: #FFFFFF
-logo background: #F5005B
-navigation background: #7DDFE8
-navigation link color: #FFFFFF
-"Home" nav link background: #00A5BF
-"Calendar" nav link background: #00B7D3
-"Join" nav link background: #00D5E7
-"Up Next" background: #0B1942
-"Up Next" card background #E2E2E2
-calendar background and treatments: #0B1942
-calendar highlighted day: #F5005B
-button background: #F5005B
-copyright text: #FFFFFF-->
